@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Candidate Search</title>
+</head>
+<body>
+  <header>
+    <h1>Candidate Search</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Search Candidates</h2>
+      <form id="search-form">
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" list="location-list" placeholder="Enter location">
+          <datalist id="location-list">
+            <option value="New York"></option>
+            <option value="San Francisco"></option>
+            <option value="London"></option>
+            <option value="Mumbai"></option>
+            <option value="India"></option>
+            <option value="Mexico"></option>
+            <!-- Add more location options here -->
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="job-role">Job Role:</label>
+          <input type="text" id="job-role" list="job-role-list" placeholder="Enter job role">
+          <datalist id="job-role-list">
+            <option value="Software Developer"></option>
+            <option value="Product Manager"></option>
+            <option value="UI/UX Designer"></option>
+            <option value="Web Developer"></option>
+            <option value="Front end Developer"></option>
+            <option value="Graphic Designer"></option>
+            <!-- Add more job role options here -->
+          </datalist>
+        </div>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    <section id="candidates-list" class="hidden">
+      <h2>Fetched Candidates</h2>
+      <ul id="candidates"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+

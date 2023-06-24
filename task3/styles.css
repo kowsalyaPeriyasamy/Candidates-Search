@@ -1,0 +1,160 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4a6ef5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #3658c5;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #candidates-list {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  #candidates {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .candidate-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+  
+  .candidate-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .candidate-info {
+    flex-grow: 1;
+  }
+  
+  .candidate-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .candidate-location {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .candidate-job-role {
+    font-size: 14px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 600px) {
+    main {
+      padding: 10px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    input[type="text"] {
+      padding: 8px;
+    }
+    
+    button {
+      padding: 8px;
+    }
+    
+    .candidate-item {
+      padding: 8px;
+    }
+    
+    .candidate-avatar {
+      width: 30px;
+      height: 30px;
+      margin-right: 8px;
+    }
+    
+    .candidate-name {
+      font-size: 16px;
+    }
+    
+    .candidate-location {
+      font-size: 10px;
+    }
+    
+    .candidate-job-role {
+      font-size: 12px;
+    }
+  }
+  
